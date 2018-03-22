@@ -1,0 +1,203 @@
+@font-face{
+	font-family: 'Dancing Script', cursive;
+	src:url(https://fonts.googleapis.com/css?family=Dancing+Script);
+}
+
+body{
+	background-color: #02010A;
+	font-family: 'Dancing Script', cursive;
+}
+
+/* Formato del área de encabezado */
+
+header{
+	background-color: #5B7989;
+	border-radius: 10px 10px 0 0;
+	color:#fff;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-direction:row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-wrap:wrap;
+}
+
+
+/* Formato para pantallas de más de 900px */
+
+@media screen and (min-width:901px){
+		
+		
+		header{
+			display: flex;
+			flex-wrap: nowrap;
+			-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap:nowrap;
+			margin:auto;
+		}
+		
+		#enlaces2 {
+			text-align: right;
+			position:relative;
+			top:70%;
+		}
+
+		#contenido {
+			width: 900px;
+			position: relative;
+			margin:auto;
+			border:auto;
+			display: flex;
+			flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap:wrap;
+		}
+
+		.image {
+			width:33.33%;
+		}
+
+		footer{
+			display: flex;
+			flex-wrap: nowrap;
+			-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap:nowrap;
+		}
+
+		#Contacto {
+			width:20%;
+			border-right: 1px solid white;
+		}
+
+		#Politicas {
+			width:20%;
+			border-right: 1px solid white;
+		}
+
+		#Social{
+			width:20%;
+			border-right: 1px solid white;
+		}
+
+		#Derechos{
+			width:20%;
+		}
+
+}
+
+
+/* Formato del área de encabezado */
+
+#logo {
+	padding: 1%;
+	margin:1%;
+	flex-grow: 1;
+	-webkit-flex-grow:1;
+	-ms-flex-grow:1;
+}
+
+#logo img{
+	width:100px;
+	margin:5px;
+	border-radius: 5px;
+}
+
+#titulo {
+	padding: 1%;
+	text-shadow: 2px 2px 2px #02010A;
+	flex-grow: 2;
+	-webkit-flex-grow:2;
+	-ms-flex-grow:2;
+	text-align: left;
+}
+
+#enlaces {
+	padding: 1%;
+	flex-grow: 2;
+	-webkit-flex-grow:2;
+	-ms-flex-grow:2;
+}
+
+nav {
+	padding:1%;
+	position:relative;
+	top: 10%;
+	text-align: center;
+}
+
+#enlaces nav a{
+	padding: 2%;
+	text-decoration: none;
+	color:#fff;
+}
+
+/* Formato del área de pie de página */
+
+footer{
+	background-color: #C6D5C5;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	flex-direction: row;
+	-webkit-flex-direction:row;
+	-ms-flex-direction:row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	font-size: 12px;
+}
+
+
+footer div{
+	flex-grow: 1;
+	-webkit-flex-grow:1;
+	-ms-flex-grow:1;
+	width:100%;
+	padding: 2%;
+}
+
+
+
+#Politicas p{
+	text-align: justify;
+}
+
+
+#Social img{
+	padding: 2px;
+	width: 30px;
+	height: 30px;
+}
+
+/* Formato del área de contenido */
+
+section {
+	width:100%;
+	background-color: #D5C75F;
+}
+
+.image img{
+	width:50%;
+	height:200px;
+	position: relative;
+	left:25%;
+	padding: 1%;
+}
+
+.image:nth-child(even) img{
+	filter: grayscale(100%);
+	-webkit-filter:grayscale(100%);
+	-ms-filter:grayscale(100%);
+}
+
+#img3 {
+	filter: sepia(90%);
+	-webkit-filter:sepia(90%);
+	-ms-filter:sepia(90%);
+}
+
+#img1{
+	filter: blur(10px);
+	-webkit-filter:blur(10px);
+	-ms-filter:blur(10px);
+}
